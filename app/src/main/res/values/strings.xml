@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SecimGunu</string>
+    <string name="kilic">https://www.google.com.tr/</string>
+    <string name="muharrem">https://www.google.com.tr/</string>
+    <string name="recep">https://www.google.com.tr/</string>
+    <string name="sinan">https://www.google.com.tr/</string>
 </resources>

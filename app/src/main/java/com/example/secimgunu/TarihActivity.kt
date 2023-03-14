@@ -24,13 +24,13 @@ class TarihActivity : AppCompatActivity() {
         toolbarTarih.subtitle="Cumhurbaşkanlığı Seçimi"
         setSupportActionBar(toolbarTarih)
 
-        buttonKalanGun.setOnClickListener {
+        buttonGeriDonTarih.setOnClickListener {
 
             val intent= Intent(this@TarihActivity,MainActivity::class.java)
             startActivity(intent)
         }
 
-        val electionDay = LocalDateTime.of(2023, Month.MAY, 14, 8, 0, 0) // seçim günü tarihini buradan belirleyebilirsiniz
+        val electionDay = LocalDateTime.of(2023, Month.MAY, 14, 5, 0, 0) // seçim günü tarihini buradan belirleyebilirsiniz
         val timer = object: CountDownTimer(Duration.between(LocalDateTime.now(), electionDay).toMillis(), 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 val diff = Duration.ofMillis(millisUntilFinished)
@@ -43,12 +43,21 @@ class TarihActivity : AppCompatActivity() {
                 val diffInMinutes = diff.toMinutesPart()
                 val diffInSeconds = diff.toSecondsPart()
 
-                val timeLeftTextView = findViewById<TextView>(R.id.textViewKalanSure)
-                timeLeftTextView.text = "Kalan Süre: $diffInDays gün $diffInHours saat $diffInMinutes dakika $diffInSeconds saniye"
+                val timeLeftDaysTextView = findViewById<TextView>(R.id.textViewKalanGun)
+                timeLeftDaysTextView.text = "\n$diffInDays \ngün\n"
+
+                val timeLeftHoursTextView = findViewById<TextView>(R.id.textViewKalanSaat)
+                timeLeftHoursTextView.text = "\n$diffInHours \nsaat\n"
+
+                val timeLeftMinutesTextView = findViewById<TextView>(R.id.textViewKalanDakika)
+                timeLeftMinutesTextView.text = "\n$diffInMinutes \ndakika\n"
+
+                val timeLeftSecondsTextView = findViewById<TextView>(R.id.textViewKalanSaniye)
+                timeLeftSecondsTextView.text = "\n$diffInSeconds \nsaniye\n"
             }
 
             override fun onFinish() {
-                val timeLeftTextView = findViewById<TextView>(R.id.textViewKalanSure)
+                val timeLeftTextView = findViewById<TextView>(R.id.textViewKalanGun)
                 timeLeftTextView.text = "Seçim günü geldi!"
             }
         }

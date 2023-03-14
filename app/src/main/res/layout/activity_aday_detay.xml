@@ -5,52 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity">
-
+    tools:context=".AdayDetayActivity">
 
     <Button
-        android:id="@+id/buttonAday"
+        android:id="@+id/buttonAbout"
         android:layout_width="280dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="101dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="104dp"
         android:backgroundTint="@color/kirmizi"
-        android:text="ADAYLARI GÖRMEK İÇİN TIKLAYINIZ"
+        android:text="ADAY HAKKINDA BİLGİ ALMAK İÇİN TIKLAYINIZ"
         android:textSize="16sp"
-        android:visibility="visible"
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSayac" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetay" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewDetay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="2023 Genel Seçim Uygulamasına\nHoşgeldiniz"
+        android:text="TextView"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="36sp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="260dp"
+        android:layout_height="237dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDetay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
     <Button
-        android:id="@+id/buttonSayac"
+        android:id="@+id/buttonGeriDonAdayDetay"
         android:layout_width="280dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="216dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="223dp"
         android:backgroundTint="@color/kirmizi"
-        android:text="Seçime Kaç Gün Kaldı ?"
+        android:text="GERİ DÖN"
         android:textSize="16sp"
-        android:visibility="visible"
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

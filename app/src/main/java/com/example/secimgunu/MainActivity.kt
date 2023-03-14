@@ -10,10 +10,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        buttonBasla.setOnClickListener {
+
+        buttonSayac.setOnClickListener{
 
             val intent=Intent(this@MainActivity,TarihActivity::class.java)
             startActivity(intent)
+
         }
+        buttonAday.setOnClickListener{
+
+            val intent=Intent(this@MainActivity,AdayActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
     }
 }
