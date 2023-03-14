@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">SecimGunu</string>
-    <string name="kilic">https://www.google.com.tr/</string>
-    <string name="muharrem">https://www.google.com.tr/</string>
-    <string name="recep">https://www.google.com.tr/</string>
-    <string name="sinan">https://www.google.com.tr/</string>
+    <string name="kilic">https://tr.wikipedia.org/wiki/Kemal_K%C4%B1l%C4%B1%C3%A7daro%C4%9Flu</string>
+    <string name="muharrem">https://tr.wikipedia.org/wiki/Muharrem_%C4%B0nce</string>
+    <string name="recep">https://tr.wikipedia.org/wiki/Recep_Tayyip_Erdo%C4%9Fan</string>
+    <string name="sinan">https://tr.wikipedia.org/wiki/Sinan_O%C4%9Fan</string>
+    <string name="Anket">https://docs.google.com/forms/d/e/1FAIpQLScp97eygoOnJTlIvYCuVGOA7aCHQ2H2prak3MHKWIviJ6YGlg/viewform?usp=sf_link</string>
+
 </resources>

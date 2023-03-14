@@ -25,7 +25,7 @@ class AdayAdapter(var AdayListesi:ArrayList<Adaylar>) : RecyclerView.Adapter<Ada
     override fun onBindViewHolder(holder: VHolder, position: Int) {
         itemClick
         holder.tvAd.text = AdayListesi.get(position).ad
-        holder.ivResim.setImageResource(AdayListesi.get(position).adayıd)
+        holder.ivResim.setImageResource(AdayListesi.get(position).adayid)
 
     }
 

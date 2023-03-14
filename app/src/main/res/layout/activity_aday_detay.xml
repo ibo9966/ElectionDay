@@ -11,15 +11,15 @@
         android:id="@+id/buttonAbout"
         android:layout_width="280dp"
         android:layout_height="70dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginBottom="76dp"
         android:backgroundTint="@color/kirmizi"
         android:text="ADAY HAKKINDA BİLGİ ALMAK İÇİN TIKLAYINIZ"
         android:textSize="16sp"
         app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGeriDonAdayDetay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDetay" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textViewDetay"
@@ -51,14 +51,14 @@
         android:id="@+id/buttonGeriDonAdayDetay"
         android:layout_width="280dp"
         android:layout_height="70dp"
-        android:layout_marginTop="223dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/kirmizi"
         android:text="GERİ DÖN"
         android:textSize="16sp"
         app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDetay" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

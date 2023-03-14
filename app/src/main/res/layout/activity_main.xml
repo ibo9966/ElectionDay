@@ -9,19 +9,32 @@
 
 
     <Button
+        android:id="@+id/buttonAnket"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/kirmizi"
+        android:text="ANKETE KATILMAK İÇİN TIKLAYINIZ"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/buttonAday"
         android:layout_width="280dp"
         android:layout_height="71dp"
-        android:layout_marginTop="101dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/kirmizi"
         android:text="ADAYLARI GÖRMEK İÇİN TIKLAYINIZ"
         android:textSize="16sp"
         android:visibility="visible"
         app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAnket"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSayac" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -42,15 +55,15 @@
         android:id="@+id/buttonSayac"
         android:layout_width="280dp"
         android:layout_height="71dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginBottom="57dp"
         android:backgroundTint="@color/kirmizi"
         android:text="Seçime Kaç Gün Kaldı ?"
         android:textSize="16sp"
         android:visibility="visible"
         app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAday"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
